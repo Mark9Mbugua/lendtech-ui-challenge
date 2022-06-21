@@ -1,0 +1,20 @@
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  border: 1px solid grey;
+  height: 60vh;
+  width: 90%;
+  margin: 8% 5%;
+}
+
+.buttonsContainer {
+  @extend .counterContainer;
+  border: unset;
+}
+
+.counterDetails {
+  display: flex;
+  flex-direction: column;
+}

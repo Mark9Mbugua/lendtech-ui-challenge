@@ -7,14 +7,19 @@ export const MyCustomForm = styled.form`
 
   input {
     outline: none;
+    min-width: 300px;
   }
 
   button {
+    display: flex;
+    align-items: center;
     color: #fff;
-    background: #1920e5;
-    
+    background: #0f16ea;
+    padding: 15px 25px;
+
     &:hover {
       cursor: pointer;
+      background: #070c94;
     }
   }
 `;

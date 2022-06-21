@@ -11,17 +11,19 @@ export const CustomButton = styled.button`
   transition: all 0.2s ease-in-out;
   color: #fff;
   background: ${(props) =>
-    props.counter == "Infinity"
-      ? "#ff0000"
-      : props.counter % 1 === 0
+    // props.counter == "Infinity"
+    //   ? "#ff0000"
+    //   :
+    props.counter % 1 === 0
       ? "#24c918"
       : props.counter % 1 !== 0
       ? "#9c00f6"
       : "#9b9b9b"};
   box-shadow: ${(props) =>
-    props.counter == "Infinity"
-      ? "0 5px 15px #ff0000"
-      : props.counter % 1 === 0
+    // props.counter == "Infinity"
+    //   ? "0 5px 15px #ff0000"
+    //   :
+    props.counter % 1 === 0
       ? "0 5px 15px #24c918"
       : props.counter % 1 !== 0
       ? "0 5px 15px #9c00f6"
@@ -44,7 +46,7 @@ export const FormInput = styled.form`
   button {
     color: #fff;
     background: #1920e5;
-    
+
     &:hover {
       cursor: pointer;
     }

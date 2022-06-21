@@ -22,9 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-<<<<<<< HEAD
-./netlify
-=======
 # Local Netlify folder
 .netlify
->>>>>>> e228ffa3ebd5bf3e73da726e5217b820bd7d0969

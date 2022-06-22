@@ -11,20 +11,24 @@ export const CustomButton = styled.button`
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
   color: #fff;
-  background: ${(props) =>
-    isNaN(props.counter) === true
+  background: ${({ counter }) =>
+    isNaN(counter) === true
       ? "#ff0000"
-      : props.counter % 1 === 0
+      : counter === ""
+      ? "#ff0000"
+      : counter % 1 === 0
       ? "#24c918"
-      : props.counter % 1 !== 0
+      : counter % 1 !== 0
       ? "#9c00f6"
       : "#9b9b9b"};
-  box-shadow: ${(props) =>
-    isNaN(props.counter) === true
+  box-shadow: ${({ counter }) =>
+    isNaN(counter) === true
       ? "0 5px 15px #ff0000"
-      : props.counter % 1 === 0
+      : counter === ""
+      ? "0 5px 15px #ff0000"
+      : counter % 1 === 0
       ? "0 5px 15px #24c918"
-      : props.counter % 1 !== 0
+      : counter % 1 !== 0
       ? "0 5px 15px #9c00f6"
       : "0 5px 15px #9b9b9b"};
 

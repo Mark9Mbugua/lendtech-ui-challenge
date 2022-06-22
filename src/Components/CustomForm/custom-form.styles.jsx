@@ -7,7 +7,13 @@ export const MyCustomForm = styled.form`
 
   input {
     outline: none;
-    min-width: 300px;
+    width: 300px;
+    max-width: 300px;
+
+    &:hover {
+      cursor: pointer;
+      background: #ede5e5;
+    }
   }
 
   button {

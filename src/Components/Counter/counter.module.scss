@@ -6,16 +6,11 @@
   box-shadow: 0px 8px 10px 0px #e6e0e0;
   height: 60vh;
   width: 90%;
-  margin: 5rem;
+  margin: 5rem 3.5rem;
 }
 
 .buttonsContainer {
   @extend .counterContainer;
   border: unset;
   box-shadow: unset;
-}
-
-.counterDetails {
-  display: flex;
-  flex-direction: column;
 }

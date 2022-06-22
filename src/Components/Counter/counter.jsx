@@ -4,12 +4,12 @@ import axios from "axios";
 import MutliplyButton from "../Buttons/multiply-button";
 import SquareButton from "../Buttons/square-button";
 import CustomForm from "../CustomForm/custom-form";
-// import "../../API/db.json";
+import CounterDetails from "../CounterDetails/counter-details";
 import styles from "./counter.module.scss";
 
 const Counter = () => {
   const [counter, setCounter] = useState("Blow");
-  const [formCounter, setFormCounter] = useState(null);
+  const [formCounter, setFormCounter] = useState("");
   const [isEven, setIsEven] = useState(false);
   const [data, setData] = useState(false);
 
@@ -107,13 +107,14 @@ const Counter = () => {
               handleSubmit={handleSubmit}
               setFormCounter={setFormCounter}
             />
-            <div className={styles.counterDetails}>
+            {/* <div className={styles.counterDetails}>
               <h3>Counter Value: {counter}</h3>
               <br />
               <h5>Is counter value an even number? </h5>
               {isEven ? <h4>Yes</h4> : <h4>No</h4>}
               <br />
-            </div>
+            </div> */}
+            <CounterDetails counter={counter} isEven={isEven} />
             <SquareButton
               handleSquareRoot={handleSquareRoot}
               counter={counter}

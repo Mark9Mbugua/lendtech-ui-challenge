@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CounterDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   width: 40%;
   padding: 20px;
   border: 1px solid grey;

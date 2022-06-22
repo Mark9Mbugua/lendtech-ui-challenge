@@ -9,7 +9,7 @@ import styles from "./counter.module.scss";
 
 const Counter = () => {
   const [counter, setCounter] = useState("Blow");
-  const [formCounter, setFormCounter] = useState("");
+  const [formCounter, setFormCounter] = useState(2);
   const [isEven, setIsEven] = useState(false);
   const [data, setData] = useState(false);
 
@@ -85,7 +85,8 @@ const Counter = () => {
 
   //No.1(a) First Button (Multiply) must multiply the value (2^2, 2^3, etc.)
   const handleMultiplication = () => {
-    setCounter(Math.pow(counter, counter));
+    setCounter(counter * counter);
+    // setCounter(Math.pow(counter, counter));
   };
 
   //No.1(b) Second Button (Square) must square the value (sqrt(2^3) for example)
@@ -107,13 +108,6 @@ const Counter = () => {
               handleSubmit={handleSubmit}
               setFormCounter={setFormCounter}
             />
-            {/* <div className={styles.counterDetails}>
-              <h3>Counter Value: {counter}</h3>
-              <br />
-              <h5>Is counter value an even number? </h5>
-              {isEven ? <h4>Yes</h4> : <h4>No</h4>}
-              <br />
-            </div> */}
             <CounterDetails counter={counter} isEven={isEven} />
             <SquareButton
               handleSquareRoot={handleSquareRoot}

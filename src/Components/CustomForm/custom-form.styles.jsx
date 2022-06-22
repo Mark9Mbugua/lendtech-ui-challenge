@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const CustomFormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
 export const MyCustomForm = styled.form`
   display: flex;
   box-shadow: 0px 8px 10px 0px #e6e0e0;
@@ -9,6 +15,7 @@ export const MyCustomForm = styled.form`
     outline: none;
     width: 300px;
     max-width: 300px;
+    padding: 10px 20px 5px;
 
     &:hover {
       cursor: pointer;

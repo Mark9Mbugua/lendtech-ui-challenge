@@ -8,7 +8,7 @@ const CustomForm = ({ formCounter, setFormCounter, handleSubmit }) => {
         type="text"
         name="formCounter"
         id="formCounter"
-        placeholder="Add a number..."
+        placeholder="Enter a number..."
         value={formCounter}
         onChange={(e) => setFormCounter(e.target.value)}
       />
